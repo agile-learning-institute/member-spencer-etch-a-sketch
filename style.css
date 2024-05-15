@@ -1,7 +1,3 @@
-body {
-    background-color: red;
-}
-
 #container {
     background-color: white;
     display: flex;
@@ -13,12 +9,12 @@ body {
 #sketch {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    height: auto;
+    width: 530px;
+    height: 530px;
 }
 
 #sketch div {
-    flex: 1 0 calc(100% / 16);
+    flex: 0 0 calc(100% / 16);
     height: calc(530px / 16);
     border: 1px solid grey;
     box-sizing: border-box;
