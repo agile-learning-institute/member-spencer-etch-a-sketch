@@ -1,10 +1,10 @@
-const grid = document.getElementById('grid');
+const sketch = document.getElementById('sketch');
 
 function createGrid(size) {
-    grid.innerHTML = '';
+    sketch.innerHTML = '';
     for (let i = 0; i < size * size; 1++) {
         const cell = document.createElement('div');
-        grid.appendChild(cell);
+        sketch.appendChild(cell);
     }
 }
 

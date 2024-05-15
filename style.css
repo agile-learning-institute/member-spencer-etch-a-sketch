@@ -1,13 +1,20 @@
-#grid {
-    width: 640px;
-    height: 640px;
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    gap: 1px;
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#grid div {
-    background-color: darkgrey;
-    border: 1px solid red;
+#sketch {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 640px;
+}
+
+#sketch div {
+    flex: 1 0 calc(100% / 16);
+    height: calc(640px / 16);
+    border: 1px solid grey;
+    box-sizing: border-box;
 }
