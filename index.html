@@ -9,7 +9,14 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <input type="color" id="color-picker" value="#808080">
+    <div id="controls">
+        <button onclick="changeGridSize()">Set The Size Of Your Grid Here</button>
+        <label for="color-picker">Choose your color;</label>
+        <input type="color" id="color-picker" value="#808080">
+    </div>
+    
+    <div id="color-picker-container"></div>
+
     <div id="container">
         <div id="sketch"></div>
     </div>

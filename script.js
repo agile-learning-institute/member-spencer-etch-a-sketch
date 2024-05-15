@@ -1,3 +1,8 @@
+function changeGridSize() {
+    let size = prompt("Enter the number of squares per size for the new grid (max 100 squares):", 16);
+    if (size)
+}
+
 let currentColor = 'grey';
 
 const sketch = document.getElementById('sketch');
@@ -20,3 +25,5 @@ function createGrid(size) {
 createGrid(16);
 
 console.log
+
+//Need to add a feature where using the mouse when the left button is held down rather than the hover function//
