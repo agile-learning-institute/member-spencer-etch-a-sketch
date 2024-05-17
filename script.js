@@ -21,14 +21,27 @@ function createGrid(size) {
     sketch.style.gridTemplateRows = `repeat(${size}', 1fr)`;
     sketch.innerHTML = '';
 
+    let mouseDown = false;
+
+    sketch.addEventListener('mousedown', () => {
+        mouseDown = true;
+    });
+
+    document.addEventListener('mouseup', () => {
+        mouseDown = false;
+    });
+
     for (let i = 0; i < size * size; i++) {
         const cell = document.createElement('div');
         cell.style.width = '100%';
         cell.style.height = '100%';
-        cell.addEventListener('mouseover', function() {
+        cell.addEventListener('mousemove', () => {
+            if (mouseDown) {
             cell.style.backgroundColor = currentColor;
-        });
-        sketch.appendChild(cell);
+        }
+    });
+ 
+    sketch.appendChild(cell);
     }
 }    
 

@@ -37,6 +37,6 @@ button {
 #sketch div {
     flex: 0 0 calc(100% / 16);
     height: calc(530px / 16);
-    border: 1px solid grey;
+    border: .75px solid grey;
     box-sizing: border-box;
 }
