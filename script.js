@@ -14,15 +14,17 @@ let currentColor = 'grey';
 
 function createGrid(size) {
     const sketch = document.getElementById('sketch');
+    sketch.style.display = 'grid';
     sketch.style.width = '530px';
     sketch.style.height = '530px';
     sketch.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     sketch.style.gridTemplateRows = `repeat(${size}', 1fr)`;
     sketch.innerHTML = '';
+
     for (let i = 0; i < size * size; i++) {
         const cell = document.createElement('div');
-        cell.style.flex = '1 0 auto';
-        cell.style.height = 'calc(960px / ' + size + ')';
+        cell.style.width = '100%';
+        cell.style.height = '100%';
         cell.addEventListener('mouseover', function() {
             cell.style.backgroundColor = currentColor;
         });
