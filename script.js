@@ -48,9 +48,3 @@ function createGrid(size) {
 document.getElementById('color-picker').addEventListener('change', function(event) {
     currentColor = event.target.value;
 });
-
-createGrid(16);
-
-console.log
-
-//Need to add a feature where using the mouse when the left button is held down rather than the hover function//
